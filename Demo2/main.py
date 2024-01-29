@@ -55,9 +55,12 @@ def hoo(**kvargs):
     print(f'hoo({kvargs})')
     for key in kvargs.keys() :
         print(f'{key} : {kvargs[key]}')
+    # for key, value in kvargs !!!! WHY DIDNT WORK??
+    # here's the proper syntax:
+    for key, value in kvargs.items():
+        print(f'{key} : {value}')
 
 
-# for key, value in kvargs !!!! WHY DIDNT WORK??
 hoo(student1='Mathieu',student2='Chris',student3='Taimoor',student4='Bohdan')
 
 
