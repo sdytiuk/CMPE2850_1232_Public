@@ -66,6 +66,16 @@ hoo(student1='Mathieu',student2='Chris',student3='Taimoor',student4='Bohdan')
 
 # TOPIC: how do you sort a dictionary?
 
+def A():
+    yield 1
+    yield 2
+    yield 3
+
+
+print(type(A()))
+for index, item in enumerate(A()):
+    print(f"{index}: {item}")
+
 
 # yields - NEXT CLASS!!
 def backwards(seq) :
@@ -75,3 +85,7 @@ def backwards(seq) :
 
 sample = (1,2,3,4)
 print(backwards(sample))
+print("Trying next: ", next(backwards(sample)))
+
+for item in backwards(sample):
+    print(item)
